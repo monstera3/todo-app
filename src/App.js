@@ -1,16 +1,12 @@
-
+import {Title} from './components/Title'
 import './App.css';
 
-const items = [
-  {
 
-  }
-];
 
 function App() {
   return (
     <div className="App">
-
+      <Title />
     </div>
   );
 }
