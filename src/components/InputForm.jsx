@@ -3,10 +3,16 @@ import { MdAddCircle } from 'react-icons/md';
 
 
 export const InputForm = () => {
+
+  const handleSubmit = (e) => {
+    console.log("a");
+    e.preventDefault();
+  }
+
   return(
     <div className="inputForm">
-      <form>
-        <input type="text"/>
+      <form onSubmit={handleSubmit}>
+        <input className="" type="text"/>
         <button>
           <MdAddCircle size="2rem"/>
         </button>
