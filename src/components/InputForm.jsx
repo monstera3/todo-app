@@ -1,4 +1,3 @@
-import { FaGithub } from 'react-icons/fa';
 import { MdAddCircle } from 'react-icons/md';
 import {useState} from "react";
 
@@ -13,19 +12,21 @@ export const InputForm = ({taskList, setTaskList}) => {
     setTaskList([
       ...taskList,
       {
+        id: taskList.length,
         text: inputText
       }
     ]);
+    setInputText("");
   }
 
-  const handlrChange = (e) => {
+  const handleChange = (e) => {
     setInputText(e.target.value);
   }
   
   return(
     <div className="inputForm">
       <form onSubmit={handleSubmit}>
-        <input className="" type="text" onChange={handlrChange}/>
+        <input className="" type="text" onChange={handleChange} value={inputText}/>
         <button>
           <MdAddCircle size="2rem"/>
         </button>
