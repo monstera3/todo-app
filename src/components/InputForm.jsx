@@ -1,5 +1,4 @@
 import { MdAddCircle } from 'react-icons/md';
-import {useState} from "react";
 
 
 export const InputForm = () => {
@@ -8,7 +7,7 @@ export const InputForm = () => {
   return(
     <div className="inputForm">
       <form>
-        <input className="" type="text"/>
+        <input className="" type="text" autoFocus={true}/>
         <button>
           <MdAddCircle size="2rem"/>
         </button>
