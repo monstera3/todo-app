@@ -4,6 +4,7 @@ export const Title = () => {
     <div>
       <header>
         <h1>TODO</h1>
+        <h2>text</h2>
       </header>
     </div>
 );
